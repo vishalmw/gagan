@@ -3,12 +3,23 @@
 import React from "react";
 import Header from "../Header/Header";
 import {useRouter} from "next/navigation";
+// import { Admin } from "mongodb";
 
 export default function page() {
   const rout= useRouter();
-const dash=()=>{
+
+const dash= async ()=>{
+
+const user= document.getElementById("user").value;
+const pass= document.getElementById("pass").value;
+
 
   rout.push('/Customer-dash');
+
+
+
+
+
 }
 
   return (
@@ -18,10 +29,10 @@ const dash=()=>{
         <div className="max-w-[300px] p-[5px]">
           <div className="m-5 text-[20px] ">
           <label htmlFor="User">User Name</label>
-          <input type="text" />
+          <input type="text" id="user" />
           </div>
           <div className="m-5 text-[20px]">
-          <label htmlFor="Password">Password</label>
+          <label htmlFor="Password" id="pass">Password</label>
           <input type="text" />
           </div>
           <div className="m-5 text-[20px]">

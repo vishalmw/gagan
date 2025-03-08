@@ -3,32 +3,30 @@
 import Image from "next/legacy/image";
 import Header from "./Header/Header";
 import data from "@/app/Store/data";
+import { VideoOff } from "lucide-react";
 
 export default function Home() {
   return (
     <>
       <Header />
 
-      <div className="bg-gray-50 max-w[1000]  grid m-5">
-        <Image
-          src="https://thumbs.dreamstime.com/b/indian-naan-bread-herbs-garlic-seasoning-plate-189166126.jpg"
-          width={"700px"}
-          height={"500px"}
-          className="blur-sm"
-        ></Image>
+      <div className="bg-white-50">
+      <video
+      src="https://v.ftcdn.net/09/19/09/88/240_F_919098885_JVZqD7XdmXAqgxkNYst6IoXYOcjYlp7n_ST.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      style={{margin:"auto"}}
+     className="w-[1000px]"
+    />
 
-        <div className="translate-y-[-200px] bg-black opacity-50 p-5">
-          <h1 className="text-center text-white text-[30px]">
-            Our Home nourishes families and communities by getting snacks into
-            the hands of those who want and need them the most.
-          </h1>
-        </div>
       </div>
-      <div className="container grid grid-cols-4 mx-auto justify-center p-3">
+      <div className=" grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1 justify-items-center max-sm:justify-items-center lg:grid-cols-4   p-1">
         {data.map((el, index) => (
           <div
             key={index}
-            className="bg-white shadow-md rounded-lg p-2 w-60 h-70 hover:scale-130 transition-transform m-2 "
+            className="bg-white shadow-md rounded-lg p-2 w-60 h-70 hover:scale-130 transition-transform m-2  max-sm:w-[300px]  max-sm:h-[300px] max-sm:p-2   "
           >
             <div className="relative w-full h-40">
               <Image
@@ -36,7 +34,7 @@ export default function Home() {
                 alt={el.detail}
                 layout="fill"
                 objectFit="cover"
-                className="rounded-sm"
+                className="rounded-sm "
               />
             </div>
             <h3 className="text-lg font-bold mt-3 text-gray-800 text-center">

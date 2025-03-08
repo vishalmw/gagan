@@ -14,6 +14,7 @@
     "git": "^0.1.5",
     "lucide-react": "^0.477.0",
     "mongodb": "^6.14.0",
+    "mongoose": "^8.12.1",
     "next": "15.2.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
