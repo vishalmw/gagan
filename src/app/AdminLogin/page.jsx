@@ -40,7 +40,7 @@ export default function Auth() {
               type="submit"
               className="w-full bg-indigo-600 text-white p-2 rounded-lg hover:bg-indigo-700 transition"
             >
-              Login
+              Loginin
             </button>
           </form>
         </div>
