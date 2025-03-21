@@ -18,7 +18,7 @@ export default function Home() {
       muted
       playsInline
       style={{margin:"auto"}}
-     className="w-[1000px]"
+     className="w-full"
     />
 
       </div>

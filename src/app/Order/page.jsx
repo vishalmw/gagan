@@ -1,23 +1,12 @@
 import React from "react";
-// import Header from "../Header/Header";/
-import Link from "next/link";
-import { FaSearch,FaShoppingCart } from "react-icons/fa";
+import Header from "../Header/Header";
 import data from "../Store/data";
 import Image from "next/image";
-// import { signOut } from "next-auth/react";
-export default function CustomerPage() {
+
+export default function Order() {
   return (
     <div>
-      <div className='flex items-center justify-center gap-10 border-b-gray-200 border-[2px] w-full bg-white h-[50px]' >
-       <div><Link href="/" className="uppercase text-[20px] hover:text-blue-500">Gagan</Link></div>
-       <div className="w-[400px]"><input type="text" placeholder=" Enter Area Pincode" className="w-full border-gray-200 border-[2px] rounded placeholder-slate-400 placeholder-pr-2 h-[30px] "/></div>
-       <FaSearch />
-        <div><Link href="/" className=" hover:text-blue-500 ">Home</Link></div>
-        {/* <button onClick={signOut()}>Logout</button> */}
-        <div><Link href="/" className=" hover:text-blue-500 " >Logout</Link></div>
-        <div><Link href="/Order"className=" hover:text-blue-500 "> Order</Link></div>
-        <div><Link href="/Cart"className=" hover:text-blue-500 "> <FaShoppingCart /></Link></div>
-      </div>
+      <Header></Header>
       <div className=" flex flex-row justify-around gap-5 p-1 sm:gap-1 sm:justify-center  max-sm:justify-center">
         <div className="max-sm:w-auto border-2 border-gray-100 justify-center items-center p-2 w-[300px]" >
           <p className="text-[15px]">Collections</p>
